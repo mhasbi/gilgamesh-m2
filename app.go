@@ -12,7 +12,7 @@ func main() {
 
 	router.GET("/ping", Ping)
 
-	log.Fatal(http.ListenAndServe(":80", (router)))
+	log.Fatal(http.ListenAndServe(":8080", (router)))
 }
 
 func Ping(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
